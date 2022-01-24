@@ -1,0 +1,200 @@
+.container
+  margin-bottom: 103px
+.main
+  margin-top: 115px
+  background-color: #FFFFFF
+  position: relative
+  &__title
+    font-weight: bold
+    font-size: 48px
+    line-height: 59px
+    text-align: center
+    margin-bottom: 49px
+  &__nav
+    &-list
+      margin: 0 auto
+      display: flex
+      justify-content: space-evenly
+      align-items: center
+      max-width: 830px
+      list-style-type: none
+      margin-bottom: 50px
+    &-item
+      background: linear-gradient(0deg, #ECEEF6, #ECEEF6), #59AAF1
+      border-radius: 45px
+      width: 135px
+      height: 55px
+      text-align: center
+      padding-top: 16px
+      cursor: pointer
+      &:hover
+        background: #59AAF1
+        transition-delay: 0.4s
+    &-link
+      text-decoration: none
+      color: #151515
+      font-weight: 600
+      font-size: 16px
+      line-height: 140%
+  &__menu
+    &-list
+      display: flex
+      flex-wrap: wrap
+      row-gap: 21px
+      column-gap: 40px
+      list-style-type: none
+      margin-bottom: 84px
+    &-card
+      max-width: 260px
+      height: 415px
+      padding: 36px 15px 0 25px
+      background-image: url(../img/main/rectangle.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+    &-btn
+      display: block
+      margin: auto
+      width: 60px
+      height: 60px
+      padding: 15px
+      background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%)
+      box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26)
+      border-radius: 59px
+  &__img
+    position: absolute
+    content: ''
+    &--beef
+      position: absolute
+      content: ''
+      top: 69px
+      left: -42px
+      width: 153px
+      height: 88px
+    &--pincers
+      position: absolute
+      content: ''
+      top: 8em
+      right: -100em
+      width: 210px
+      height: 336px
+      opacity: 0.1
+    &--broccoli
+      position: absolute
+      content: ''
+      bottom: -83em
+      left: -1em
+      width: 184.61px
+      height: 188px
+      opacity: 0.1
+      transform: rotate(24.9deg)
+.card
+  &__img
+    width: 170px
+    height: 173px
+    display: block
+    margin: auto
+    object-fit: cover
+    filter: drop-shadow(20px 10px 20px rgba(143, 92, 32, 0.1)) drop-shadow(10px 5px 10px rgba(143, 92, 32, 0.1))
+  &__title
+    font-weight: 600
+    font-size: 16px
+    line-height: 140%
+    color: #000000
+    margin-bottom: 8px
+  &__size
+    font-weight: normal
+    font-size: 12px
+    line-height: 140%
+  &__desc
+    display: block
+    font-size: 12px
+    line-height: 140%
+    color: #000000
+    margin-bottom: 19px
+  &__price
+    display: block
+    font-weight: 300
+    font-size: 24px
+    line-height: 140%
+    text-align: center
+    margin-bottom: 13px
+  &__icon
+    border-radius: 59px
+    padding: 10px
+    border: 2px solid #ECEEF6
+    margin-left: 86px
+.hover-icon
+  background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%), linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1
+  box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26)
+  border-radius: 59px
+.title-wrapper
+  margin-top: 30px
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+.hit-wrapper
+  position: relative
+  &-hit
+    position: absolute
+    content: ''
+    top: 20px
+    left: 19px
+    width: 60px
+    height: 25px
+    color: #FFFFFF
+    font-weight: 600
+    font-size: 12px
+    line-height: 140%
+    padding: 4px
+    text-align: center
+    background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1
+    box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26)
+    border-radius: 3px
+
+//   Main section 
+.main
+  &__info
+    margin-bottom: 127px
+    position: relative
+.info
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    gap: 37px
+    max-height: 260px
+  &__img
+    max-width: 242px
+    height: 260px
+  &__link
+    position: absolute
+    content: ''
+    top: 10%
+    left: 4%
+    width: 409.46px
+    height: 140px
+    padding-top: 41px
+    text-decoration: none
+    color: #FFFFFF
+    text-align: center
+    background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%)
+    border: 2px solid rgba(255, 255, 255, 0.103)
+    border-radius: 15px
+    &-wrapper
+      position: absolute
+      content: ''
+      top: 17%
+      left: 36%
+      width: 446.69px
+      height: 180px
+      background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%)
+      box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2)
+      border-radius: 15px
+  &__inst
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+  &__mail
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
