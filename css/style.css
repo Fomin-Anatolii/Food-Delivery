@@ -356,7 +356,7 @@ body {
 .header {
   background-color: #F0F5FB;
   padding-top: 25px;
-  padding-bottom: 369px;
+  padding-bottom: 286px;
 }
 
 .header__nav {
@@ -396,6 +396,8 @@ body {
 }
 
 .header__text {
+  position: relative;
+  z-index: 22;
   max-width: 622px;
   text-align: center;
   margin: 0 auto;
@@ -417,7 +419,6 @@ body {
 }
 
 .header__tel-daytime::before {
-  content: '';
   position: absolute;
   left: -4%;
   bottom: 19%;
@@ -438,7 +439,6 @@ body {
 
 .header__tel-img {
   position: absolute;
-  content: '';
   padding: 7px;
   right: 107%;
   top: -25%;
@@ -449,90 +449,96 @@ body {
   border-radius: 50%;
 }
 
-.wrapper {
-  position: relative;
-}
-
 .images-bg {
   position: absolute;
-  content: '';
-  bottom: -371px;
-  right: 27%;
-  z-index: 1;
+  top: 36%;
+  left: 33%;
 }
 
 .images-tomato {
   position: absolute;
-  content: '';
-  top: -200px;
-  left: -3%;
-  width: 135px;
-  height: 131px;
   z-index: 2;
+  left: -52px;
+  top: 136px;
+  width: 134px;
+  height: 130px;
   transform: matrix(0.91, 0.42, -0.42, 0.91, 0, 0);
 }
 
 .images-pumpkin {
   position: absolute;
-  content: '';
-  transform: matrix(0.68, 0.73, -0.73, 0.68, -14, -211);
+  top: 102px;
+  left: 11px;
 }
 
 .images-mushroom {
   position: absolute;
-  content: '';
   z-index: 2;
-  left: 21px;
-  bottom: -257px;
-  width: 108px;
-  height: 106px;
+  left: 60px;
+  bottom: 166px;
 }
 
 .images-mushroom-svg {
   position: absolute;
-  content: '';
-  width: 106px;
-  height: 100px;
-  z-index: 1;
-  left: 1px;
-  right: 1px;
+  left: 116px;
+  bottom: 124px;
   opacity: 0.1;
-  transform: matrix(0.24, 0.97, -0.97, 0.24, 75, 193);
 }
 
 .images-peppers {
   position: absolute;
-  content: '';
-  top: 45px;
-  left: 245px;
+  top: 336px;
+  left: 238px;
 }
 
-.images-pizza {
+.images-peppers-2 {
   position: absolute;
-  content: '';
-  width: 137px;
-  height: 69px;
-  top: 225px;
-  left: 1193px;
+  right: 225px;
+  top: 460px;
+  width: 104px;
+  height: 117px;
 }
 
 .images-cucumber {
   position: absolute;
-  content: '';
-  width: 225px;
-  height: 206px;
-  left: 1140px;
-  top: -130px;
+  top: 209px;
+  right: 43px;
+}
+
+.images-pizza {
+  position: absolute;
+  right: 51px;
+  top: 486px;
 }
 
 .images-basket {
   position: absolute;
-  content: '';
-  width: 308px;
-  height: 166px;
   right: 0px;
-  top: 368px;
-  z-index: 1;
+  z-index: 2;
+  bottom: -180px;
+}
+
+.images-vector {
+  position: absolute;
+  top: 406px;
+  right: 483px;
+}
+
+.images-vector-text {
+  position: absolute;
+  right: 285px;
+  bottom: 264px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: right;
+}
+
+.images-vector-text-bold {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  color: #F87848;
 }
 
 .container {
@@ -616,39 +622,30 @@ body {
   border-radius: 59px;
 }
 
-.main__img {
-  position: absolute;
-  content: '';
-}
-
 .main__img--beef {
   position: absolute;
-  content: '';
   top: 69px;
-  left: -42px;
+  left: -32px;
   width: 153px;
   height: 88px;
 }
 
 .main__img--pincers {
   position: absolute;
-  content: '';
-  top: 8em;
-  right: -100em;
-  width: 210px;
-  height: 336px;
+  right: 10px;
+  top: 215px;
+  overflow: hidden;
+  height: 149.13px;
   opacity: 0.1;
 }
 
 .main__img--broccoli {
   position: absolute;
-  content: '';
-  bottom: -83em;
+  bottom: 15em;
   left: -1em;
   width: 184.61px;
   height: 188px;
   opacity: 0.1;
-  transform: rotate(24.9deg);
 }
 
 .card__img {
@@ -717,7 +714,6 @@ body {
 
 .hit-wrapper-hit {
   position: absolute;
-  content: '';
   top: 20px;
   left: 19px;
   width: 60px;
@@ -738,10 +734,41 @@ body {
   position: relative;
 }
 
+.img-1 {
+  position: relative;
+  left: -104px;
+  overflow: hidden;
+}
+
+.img-2 {
+  position: relative;
+  left: -64px;
+}
+
+.img-3 {
+  position: relative;
+  left: -22px;
+}
+
+.img-4 {
+  position: relative;
+  left: 35px;
+}
+
+.img-5 {
+  position: relative;
+  right: -98px;
+}
+
+.img-6 {
+  position: relative;
+  right: -152px;
+  overflow: hidden;
+}
+
 .info-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 37px;
+  position: relative;
+  overflow: hidden;
   max-height: 260px;
 }
 
@@ -752,7 +779,6 @@ body {
 
 .info__link {
   position: absolute;
-  content: '';
   top: 10%;
   left: 4%;
   width: 409.46px;
@@ -768,7 +794,6 @@ body {
 
 .info__link-wrapper {
   position: absolute;
-  content: '';
   top: 17%;
   left: 36%;
   width: 446.69px;
@@ -834,17 +859,19 @@ body {
   padding: 17px 13px 10px 31px;
 }
 
-.footer__input--hover {
+.footer__btn {
+  position: relative;
+  z-index: 2;
+  padding: 14px 116px 12px 36px;
   font-weight: bold;
   font-size: 18px;
+  color: #ffffff;
   line-height: 130%;
   background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
   box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  border-radius: 59px;
+  border: none;
   cursor: pointer;
-}
-
-.footer__input--hover::placeholder {
-  color: #ffffff;
 }
 
 .footer__img-set {
@@ -853,16 +880,15 @@ body {
 
 .call-back-icon {
   position: absolute;
-  content: '';
+  z-index: 2;
   top: -2em;
-  right: 92em;
+  right: -70em;
   width: 33px;
   height: 12px;
 }
 
 .picture-car {
   position: absolute;
-  content: '';
   top: -2em;
   right: -68em;
   width: 684px;
@@ -871,7 +897,6 @@ body {
 
 .picture-mushroom {
   position: absolute;
-  content: '';
   top: -14em;
   right: -2em;
   width: 107px;
@@ -880,32 +905,54 @@ body {
 
 .picture-veg {
   position: absolute;
-  content: '';
-  top: -14em;
-  left: 74em;
-  width: 413px;
-  height: 424px;
+  right: -1519px;
+  bottom: -204px;
+  width: 350px;
+  height: 368.72px;
+}
+
+.picture-left-veg {
+  position: absolute;
+  left: -12px;
+  bottom: -283px;
 }
 
 .picture-lemon {
   position: absolute;
-  content: '';
   top: 5em;
   right: -3em;
 }
 
 .picture-pepper {
   position: absolute;
-  content: '';
   top: -4em;
   left: 86em;
 }
 
+.picture-peppers {
+  position: absolute;
+  bottom: -222px;
+  left: 229px;
+}
+
 .picture-spits {
   position: absolute;
-  content: '';
   top: 4em;
-  left: 78em;
+  left: 74em;
+}
+
+.picture-tomato {
+  position: absolute;
+  right: -1312px;
+  bottom: -159px;
+  width: 143px;
+  height: 132px;
+}
+
+.picture-cucumber {
+  position: absolute;
+  right: -1519px;
+  bottom: -17px;
 }
 
 .nav__list {

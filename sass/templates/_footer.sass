@@ -30,61 +30,77 @@
     box-sizing: border-box
     border-radius: 57px
     padding: 17px 13px 10px 31px
-    &--hover
-      font-weight: bold
-      font-size: 18px
-      line-height: 130%
-      background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1
-      box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26)
-      cursor: pointer
-      &::placeholder
-        color: #ffffff
+  &__btn
+    position: relative
+    z-index: 2
+    padding: 14px 116px 12px 36px
+    font-weight: bold
+    font-size: 18px
+    color: #ffffff
+    line-height: 130%
+    background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1
+    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26)
+    border-radius: 59px
+    border: none
+    cursor: pointer
   &__img-set
     position: absolute
 .call-back-icon
   position: absolute
-  content: ''
+  z-index: 2
   top: -2em
-  right: -67em
+  right: -70em
   width: 33px
   height: 12px
 .picture
   &-car
     position: absolute
-    content: ''
     top: -2em
     right: -68em
     width: 684px
     height: 342px
   &-mushroom
     position: absolute
-    content: ''
     top: -14em
     right: -2em
     width: 107px
     height: 106px
   &-veg
     position: absolute
-    content: ''
-    top: -14em
-    left: 74em
-    width: 413px
-    height: 424px
+    right: -1519px
+    bottom: -204px
+    width: 350px
+    height: 368.72px
+  &-left-veg
+    position: absolute
+    left: -12px
+    bottom: -283px
   &-lemon
     position: absolute
-    content: ''
     top: 5em
     right: -3em
   &-pepper
     position: absolute
-    content: ''
     top: -4em
     left: 86em
+  &-peppers
+    position: absolute
+    bottom: -222px
+    left: 229px
   &-spits
     position: absolute
-    content: ''
     top: 4em
-    left: 78em
+    left: 74em
+  &-tomato
+    position: absolute
+    right: -1312px
+    bottom: -159px
+    width: 143px
+    height: 132px
+  &-cucumber
+    position: absolute
+    right: -1519px
+    bottom: -17px
 .nav
   &__list
     display: flex

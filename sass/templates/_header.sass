@@ -1,7 +1,7 @@
 .header
   background-color: #F0F5FB
   padding-top: 25px
-  padding-bottom: 369px
+  padding-bottom: 286px
   &__nav
     display: flex
     justify-content: space-between
@@ -29,6 +29,8 @@
     line-height: 59px
     margin-bottom: 18px
   &__text
+    position: relative
+    z-index: 22
     max-width: 622px
     text-align: center
     margin: 0 auto
@@ -44,7 +46,6 @@
       line-height: 20px
       margin-right: 73px
       &::before
-        content: ''
         position: absolute
         left: -4%
         bottom: 19%
@@ -61,7 +62,6 @@
       color: inherit
     &-img
       position: absolute
-      content: ''
       padding: 7px
       right: 107%
       top: -25%
@@ -70,70 +70,70 @@
       background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%)
       box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26)
       border-radius: 50%
-
-.wrapper
-  position: relative
-.images-bg
-  position: absolute
-  content: ''
-  bottom: -371px
-  right: 27%
-  z-index: 1
-.images-tomato
-  position: absolute
-  content: ''
-  top: -200px
-  left: -3%
-  width: 135px
-  height: 131px
-  z-index: 2
-  transform: matrix(0.91, 0.42, -0.42, 0.91, 0, 0)
-.images-pumpkin
-  position: absolute
-  content: ''
-  transform: matrix(0.68, 0.73, -0.73, 0.68, -14,-211)
-.images-mushroom
-  position: absolute
-  content: ''
-  z-index: 2
-  left: 21px
-  bottom: -257px
-  width: 108px
-  height: 106px
-.images-mushroom-svg
-  position: absolute
-  content: ''
-  width: 106px
-  height: 100px
-  z-index: 1
-  left: 1px
-  right: 1px
-  opacity: 0.1
-  transform: matrix(0.24, 0.97, -0.97, 0.24, 75, 193)
-.images-peppers
-  position: absolute
-  content: ''
-  top: 45px
-  left: 245px
-.images-pizza
-  position: absolute
-  content: ''
-  width: 137px
-  height: 69px
-  top: 225px
-  left: 1193px
-.images-cucumber
-  position: absolute
-  content: ''
-  width: 225px
-  height: 206px
-  left: 1140px
-  top: -130px
-.images-basket
-  position: absolute
-  content: ''
-  width: 308px
-  height: 166px
-  right: 0px
-  top: 368px
-  z-index: 1
+.images
+  &-bg
+    position: absolute
+    top: 36%
+    left: 33%
+  &-tomato
+    position: absolute
+    z-index: 2
+    left: -52px
+    top: 136px
+    width: 134px
+    height: 130px
+    transform: matrix(0.91, 0.42, -0.42, 0.91, 0, 0)
+  &-pumpkin
+    position: absolute
+    top: 102px
+    left: 11px
+  &-mushroom
+    position: absolute
+    z-index: 2
+    left: 60px
+    bottom: 166px
+    &-svg
+      position: absolute
+      left: 116px
+      bottom: 124px
+      opacity: 0.1
+  &-peppers
+    position: absolute
+    top: 336px
+    left: 238px
+  &-peppers-2
+    position: absolute
+    right: 225px
+    top: 460px
+    width: 104px
+    height: 117px
+  &-cucumber
+    position: absolute
+    top: 209px
+    right: 43px
+  &-pizza
+    position: absolute
+    right: 51px
+    top: 486px
+  &-basket
+    position: absolute
+    right: 0px
+    z-index: 2
+    bottom: -180px
+  &-vector
+    position: absolute
+    top: 406px
+    right: 483px
+    &-text
+      position: absolute
+      right: 285px
+      bottom: 264px
+      width: 200px
+      font-size: 16px
+      line-height: 140%
+      text-align: right
+      &-bold
+        font-weight: bold
+        font-size: 16px
+        line-height: 140%
+        color: #F87848
